@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>기본정보</legend>
+      <div>
+        <label for="username">ID <input type="text" id="username" placeholder="특수문자 제외 4~16자"></label><br>
+      </div>
+      <div>
+        <label for="password"><b>비밀번호</b><input type="password" id="password" placeholder="정확히 입력하시오"></label><br>
+      </div>
+      <div>
+        <label for="email">이메일 <input type="email" id="email"></label><br>
+        <!--이메일 타입이 있어 이메일 양식에 부합하는지 검사해준다.-->
+      </div>
+      <div>
+        <label for="sex">성별
+          <select name="성별" id="sex">
+            <option value="male">남성</option>
+            <option value="female">여성</option>
+            <!--이경우 보여주는 값과 전송될 값(value값)은 따로 지정할 수 있다.-->
+          </select>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>선택입력</legend>
+      <div>
+        <label for="age">나이 <input type="number" id="age" min="1" max="150"></label><br>
+        <!--number라는 타입도 html5에서 새로 생김.-->
+        <!--max값을 지정해줘서 최대값 이상 늘어나지 않도록-->
+      </div>
+      <div>
+        <label for="주소">주소 <input type="text" id="address"></label><br>
+      </div>
+      <div>
+        <label for "self">자기소개 <textarea name="" id="self" cols="30" rows="5" placeholder="자기소개"></textarea></label>
+      </div>
+    </fieldset>
+    <button type="submit">회원가입</button>
+    <!--button은 반드시 form태그 안쪽에 있어야함.-->
+  </form>
+</body>
+</html>

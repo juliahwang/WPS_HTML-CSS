@@ -22,6 +22,7 @@
   <form action=""> <!--중복선택 안됨-->
     <input type="radio" name="radio-name" value="a">
     <input type="radio" name="radio-name" value="b">
+    <button type="submit">전송</button>
   </form>
 </body>
 </html>
@@ -66,14 +67,30 @@
   <option value="4">Fourth</option>
 </select>
 
-
-select>(<optgroup label="Fruits">
-  <option value="apple">Apple</option>
-  <option value="banana">Banana</option>
-  <option value="orange">Orange</option>
+<!--optgroup: 셀렉트창 그룹짓기-->
+<select name="" id="">
+  <optgroup label="Fruits">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="orange">Orange</option>
+  </optgroup>
   <optgroup label="Colors">
     <option value="red">Red</option>
     <option value="blue">Blue</option>
     <option value="green">Green</option>
   </optgroup>
-</optgroup>
+</select>
+
+<!--input보다는 button태그를 사용하는 것이 좋다.-->
+<form action="">
+  <input type="radio" name="radio-name" value="a">
+  <input type="radio" name="radio-name" value="b">
+  <button type="submit">전송</button>
+</form>
+
+<!--영역지정-->
+<fieldset>
+  <legend>Login</legend>
+  <label for="">username: <input type="text"></label>
+  <label for="">password: <input type="password"></label>
+</fieldset>
