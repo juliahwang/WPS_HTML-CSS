@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Table</title>
+  <style>
+    html, body {
+      font-size: 12px;
+      color: #333;
+    }
+    table {
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th, td {
+      border: 1px, solid, #999;
+      padding: 4px 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Table</h1>
+  <h3>Table basic, colspan</h3>
+  <table>
+    <tr>
+      <th>이름</th>
+      <th>나이</th>
+      <th>점수</th>
+    </tr>
+    <tr>
+      <td>철수</td>
+      <td>23세</td>
+      <td>70점</td>
+    </tr>
+    <tr>
+      <td>영희</td>
+      <td>21세</td>
+      <td>89점</td>
+    </tr>
+    <tr>
+      <td colspan="2">평균</td>
+      <td>79.5점</td>
+    </tr>
+  </table>
+
+  <h3>rowspan</h3>
+  <table>
+    <tr>
+      <td rowspan="3">a</td>
+      <td>b</td>
+    </tr>
+    <tr>
+      <td>c</td>
+    </tr>
+    <tr>
+      <td>d</td>
+    </tr>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>성별</th>
+        <th>성적</th>
+        <th>메모</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>홍길동</th>
+        <th>22세</th>
+        <th>남자</th>
+        <th>98점</th>
+        <th>잘생김</th>
+      </tr>
+      <tr>
+        <th>김춘향</th>
+        <th>21세</th>
+        <th>여자</th>
+        <th>99점</th>
+        <th>예쁨</th>
+      </tr>
+      <tr>
+        <td colspan="3">평균</td>
+        <td>87</td>
+        <td></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr></tr>
+    </tfoot>
+  </table>
+
+
+</body>
+</html>

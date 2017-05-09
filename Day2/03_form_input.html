@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <input type="text" name="username" id="username">
+    <input type="password" name="password" id="password">
+    <input type="radio" id="radio">
+    <input type="checkbox" id="checkbox">
+    <input type="button" value="button">
+    <input type="file" id="file">
+    <input type="submit">
+    <input type="reset">
+    <input type="hidden" id="hidden" value="hiddenValue">
+  </form>
+
+  <form action=""> <!--중복선택 안됨-->
+    <input type="radio" name="radio-name" value="a">
+    <input type="radio" name="radio-name" value="b">
+  </form>
+</body>
+</html>
+
+
+<h3>Label</h3>
+<form action="">
+  <div>
+    <label>ID <input type="text"></label>
+  </div>
+  <div>
+    <label for="username">Username</label>
+    <input type="text" id="username">
+  </div>
+</form>
+
+
+<h3>Select Tag</h3>
+<select name="number" id="select-id">
+  <option value="1">First</option>
+  <option value="2">Second</option>
+  <option value="3">Third</option>
+  <option value="4">Fourth</option>
+</select>
+
+<!--multiple태그는 사용이 불편해서 잘 안쓴다.-->
+<h3>Select Tag</h3>
+<select name="number" id="select-id" multiple>
+  <option value="1">First</option>
+  <option value="2">Second</option>
+  <option value="3">Third</option>
+  <option value="4">Fourth</option>
+</select>
+
+
+<!--한번에 보여줄 개수 : size-->
+<h3>Select Tag</h3>
+<select name="number" size=2 id="" multiple>
+  <option value="1">First</option>
+  <option value="2">Second</option>
+  <option value="3">Third</option>
+  <option value="4">Fourth</option>
+</select>
+
+
+select>(<optgroup label="Fruits">
+  <option value="apple">Apple</option>
+  <option value="banana">Banana</option>
+  <option value="orange">Orange</option>
+  <optgroup label="Colors">
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </optgroup>
+</optgroup>
