@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Selector</title>
+  <style>
+
+    /*전체 선택자*/
+   /*div 생략가능*/
+    div#universal-selector * {
+      text-align: right;
+      margin-right: auto 50px;
+    }
+
+    /*태그 선택자*/
+    h1 p {
+      margin: 10px;
+      text-align: center;
+      color: #ccc;
+    }
+
+
+    /*클래스 선택자*/
+    .section {
+      color: #333;
+      margin-bottom: 40px;
+    }
+    /*p를 써도되고 생략해도 된다*/
+    p.section-title {
+      font-size: 30px;
+    }
+
+    /*아이디 선택자*/
+    #id-selector {
+      vertical-align: middle;
+      font-size: 14px;
+      border: 2px solid #dddddd;
+    }
+
+    #id-selector a {
+      color: lightblue;
+      text-decoration-line: none;
+    }
+
+    /*체인선택자 : 복수 개의 선택자 사용*/
+    #index-title {
+      font-size: 18px;
+    }
+
+    #index-title.header-title {
+      font-weight: bold;
+    }
+
+    .body-text.descrip {
+      color: #999
+    }
+
+    /*그룹선택자*/
+    #index-title {
+      font-size: 18px;
+    }
+    p#index-title, #description {
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div id="universal-selector">
+    <p>practice 2017-05-10</p>
+  </div>
+  <h1>hello!</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fuga aperiam accusantium illum adipisci impedit!</p>
+
+  <div class="section">
+    <p class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, iste.</p>
+    <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, asperiores.</p>
+  </div>
+  <div class="section">
+    <p class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, iste.</p>
+    <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, asperiores.</p>
+  </div>
+
+  <div id="id-selector">
+    <a href="">출처</a>
+    <span>lorem</span>
+    <span>copyright@</span>
+  </div>
+
+  <h3 id="index-title" class="header-title">Lorem ipsum dolor sit amet.</h3>
+  <p id="description" class="body-text descrip">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>20170510 submit 황선정</title>
+  <style>
+    html {
+      font-size: 16px;
+    }
+    body {
+      font-size: 0.9rem; /*부모(맨위의 폰트사이즈)의 0.9비율로 적용*/
+      margin: 0;
+      padding: 0.7rem;
+    }
+    a {
+      color: #0275d8;
+      text-decoration: none;
+    }
+    p.modified-time {
+      text-align: right;
+    }
+
+    .similar-notions img {
+      float: left;
+      margin-right: 3px;
+      padding: 5px;
+    }
+    .similar-notions span a {
+      float: right;
+      text-align: left;
+      padding: 5px;
+    }
+    .similar-notions * {
+      white-space: pre-line;
+      vertical-align: middle;
+      line-height: 1.5rem;
+      overflow: hidden;
+    }
+
+    div.note {
+      text-alin:left;
+      margin-left: -7px;
+      margin-bottom: 2rem;
+    }
+
+    table.starting-pokemons {
+      margin: 0 auto;
+      border: 2px solid #2E6CB3;
+      background-color: #F5F5F5;
+      align-content: center;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    table.starting-pokemons tr td {
+      border: 1px solid #ccc;
+      padding : 10px;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      line-height: 1.5rem;
+      overflow: auto;
+    }
+    table.starting-pokemons tr:nth-child(1) td {
+      border: 1px solid #2E6CB3;
+      background-color: #2E6CB3;
+      border-collapse: collapse;
+      padding: 4px;
+      color: #FFCA06;
+    }
+
+    table.starting-pokemons img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: initial;
+    }
+
+    table.starting-pokemons tr:nth-child(2) td:nth-child(2) {
+      background-color: #A7DB8D;
+      border-collapse: collapse;
+    }
+    table.starting-pokemons tr:nth-child(2) td:nth-child(3) {
+      background-color: #F5AC78;
+      border-collapse: collapse;
+    }
+    table.starting-pokemons tr:nth-child(2) td:nth-child(4) {
+      background-color: #9DB7F5;
+      border-collapse: collapse;
+    }
+
+    table.starting-pokemons tr:nth-child(3) td:nth-child(1) {
+      background-color: #E8CA27;
+      border-collapse: collapse;
+    }
+    table.starting-pokemons tr:nth-child(3) td:nth-child(2) {
+      background-color: #CD853F;
+      border-collapse: collapse;
+    }
+
+    table.starting-pokemons tr:nth-child(4) td:nth-child(2) {
+      background-color: #A7DB8D;
+      border-collapse: collapse;
+    }
+    table.starting-pokemons tr:nth-child(4) td:nth-child(3) {
+      background-color: #F5AC78;
+      border-collapse: collapse;
+    }
+    table.starting-pokemons tr:nth-child(4) td:nth-child(4) {
+      background-color: #9DB7F5;
+      border-collapse: collapse;
+    }
+
+    table.starting-pokemons tr:nth-child(5) td:nth-child(2) {
+      background-color: #A7DB8D;
+      border-collapse: collapse;
+    }
+    table.starting-pokemons tr:nth-child(5) td:nth-child(3) {
+      background-color: #F5AC78;
+      border-collapse: collapse;
+    }
+    table.starting-pokemons tr:nth-child(5) td:nth-child(4) {
+      background-color: #9DB7F5;
+      border-collapse: collapse;
+    }
+
+
+    table.pikachu-generation {
+      margin: 0 auto;
+      border: 2px solid #2E6CB3;
+      background-color: #F5F5F5;
+      align-content: center;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table.pikachu-generation tr td {
+      border: 1px solid #ccc;
+      padding : 10px;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      line-height: 1.5rem;
+      overflow: auto;
+    }
+    table.pikachu-generation tr:nth-child(1) td {
+      border: 1px solid #grey;
+      background-color: #2E6CB3;
+      border-collapse: collapse;
+      padding: 4px;
+      color: #FFCA06;
+    }
+    table.pikachu-generation img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: initial;
+    }
+    table.pikachu-generation tr span:nth-child(1) {
+      color: #E8CA27;
+      font-weight: bold;
+    }
+    table.pikachu-generation tr span:nth-child(2) {
+      color: #fff;
+      font-weight: bold;
+
+    }
+    table.pikachu-generation tr td:nth-child(1) {
+      background-color: #2E6CB3;
+    }
+
+
+    .all-index {
+      border: 1px solid #ccc;
+      padding: 12px 20px 18px 20px;
+      margin-left: 5px;
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .seventh-generation * {
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .seventh-generation hr {
+      border-top: 1px solid #dddddd;
+    }
+
+    .sev-gen-content * {
+      padding-top:20px;
+      width: 600px;
+      height: auto;
+      margin: 0 auto;
+      align: center;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>피카츄</h1>
+  <p class="modified-time">최근 수정 시각: 2017-05-04 22:34:35+0900</p>
+  <div class="similar-notions">
+    <img src="https://cdn.namuwikiusercontent.com/0d/0d333d7a376060af53affcb373858ee68e818158739163322afc97a0066cf691.png?e=1503045285&k=UZvUQvcQdRxB7VltQB6bIQ" width="20" alt="">
+    <span>한지우의 피카츄에 대해서는</span>
+    <a href="#">피카츄(한지우)</a>
+    <span>문서를, 길거리 음식으로 파는 돈가스 중 하나에 대해서는 </span>
+    <a href="#">피카츄 돈까스 </a>
+    <span>문서를 참고하십시오.</span>
+  </div>
+  <div class="similar-notions">
+    <img src="https://cdn.namuwikiusercontent.com/0d/0d333d7a376060af53affcb373858ee68e818158739163322afc97a0066cf691.png?e=1503045285&k=UZvUQvcQdRxB7VltQB6bIQ" width="20" alt="">
+    <span>피카츄를 메인으로 하는 본가 게임에 대해서는 </span>
+    <a href="#">포켓몬스터 피카츄 </a>
+    <span>문서를 참고하십시오.</span>
+  </div>
+  <div class="note">
+    <ul>
+      <li>
+        <a href="#">포켓몬스터/목록/1세대, 스타팅 포켓몬</a>
+      </li>
+    </ul>
+  </div>
+  <table class="starting-pokemons">
+    <tbody>
+      <tr>
+        <td colspan="7"><b>역대 스타팅 포켓몬</b></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><a href="#"><b>관동지방</b></a></td>
+        <td colspan="2"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F001.png" alt="">
+          <a href="#">이상해씨</a></td>
+        <td colspan="2"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F004.png" alt="">
+          <a href="#">파이리</a></td>
+        <td colspan="2"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F007.png" alt="">
+          <a href="#">꼬부기</a></td>
+      </tr>
+      <tr>
+        <td colspan="3"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F025.png" alt="">
+          <a href="#">피카츄</a></td>
+        <td colspan="3"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F133.png" alt="">
+          <a href="#">이브이(라이벌 한정)</a></td>
+      </tr>
+      <tr>
+        <td><a href="#"><b>성도지방</b></a></td>
+        <td colspan="2"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F152.png" alt="">
+          <a href="#">치코리타</a></td>
+        <td colspan="2"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F155.png" alt="">
+          <a href="#">브케인</a></td>
+        <td colspan="2"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F158.png" alt="">
+          <a href="#">리아코</a></td>
+      </tr>
+      <tr>
+        <td><a href="#"><b>호연지방</b></a></td>
+        <td colspan="2"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F252.png" alt="">
+          <a href="#">나무지기</a></td>
+        <td colspan="2"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F255.png" alt="">
+          <a href="#">아차모</a></td>
+        <td colspan="2"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F258.png" alt="">
+          <a href="#">물짱이</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="pikachu-generation">
+    <tr>
+      <td colspan="3"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fdic.nicovideo.jp%2Foekaki%2F244815.png" alt="">
+        <b>세대별 전기쥐 포켓몬<b></td>
+    </tr>
+    <tr>
+      <td>
+        <span>1</span>
+        <span>세대</span>
+      </td>
+      <td><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F025.png" alt="">
+        <a href="#"><b>피카츄</b></a></td>
+      <td><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F026.png" alt="">
+        <a href="#">라이츄</a></td>
+    </tr>
+    <tr>
+      <td>
+        <span>2</span>
+        <span>세대</span>
+      </td>
+      <td colspan="2"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F172.png" alt="">
+        <a href="">피츄</a></td>
+    </tr>
+    <tr>
+      <td>
+        <span>3</span>
+        <span>세대</span>
+      </td>
+      <td><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F311.png" alt="">
+        <a href="#">플러시</a></td>
+      <td><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F312.png" alt="">
+        <a href="#">마이뇽</a></td>
+    </tr>
+    <tr>
+      <td>
+        <span>4</span>
+        <span>세대</span>
+      </td>
+      <td colspan="2"><img src="https://image-proxy.namuwikiusercontent.com/r/http%3A%2F%2Fwww.serebii.net%2Fpokedex-xy%2Ficon%2F417.png" alt="">
+        <a href="">파치리스</a></td>
+    </tr>
+  </table>
+  <div class="all-index">
+    <h3>목차</h3>
+    <ol>
+      <li>기본정보</li>
+      <li>소개</li>
+      <li>인게임
+        <ol>
+          <li>1세대</li>
+            <ol>
+              <li><a href="#">포켓몬스터 피카츄</a></li>
+                <ol>
+                  <li>피카츄는 좋은 <a href="#">스타팅 포켓몬</a>?</li>
+                </ol>
+            </ol>
+        </ol>
+      </li>
+      <li>대전</li>
+      <li>그 외의 게임
+        <ol>
+          <li><a href="#">포켓몬 불가사의 던전</a> 시리즈</li>
+          <li>대난투 스매시 시리즈</li>
+        </ol>
+      </li>
+      <li><a href="#">애니메이션</a></li>
+      <li><a href="#">포켓몬스터 스페셜</a>
+        <ol>
+          <li><a href="#">레드</a>의 피카</li>
+          <li><a href="#">옐로</a>의 츄츄</li>
+          <li><a href="#">포켓몬스터 전격피카츄</a></li>
+        </ol>
+      </li>
+      <li>기타</li>
+    </ol>
+  </div>
+  <div class="seventh-generation">
+    <h2>
+      <a href="#">3.7.</a>
+      <span>7세대</span>
+    </h2>
+    <hr>
+  </div>
+  <div class="sev-gen-content">
+    <img src="https://image-proxy.namuwikiusercontent.com/r/https%3A%2F%2Fj.gifs.com%2Fqx1JVy.gif" alt="">
+    <p>피카츄 고유의 Z기술인 필살피카슛이 공개되었다. 여주인공과 피카츄가 함께 춤을 추는 모습이 상당히 귀엽다는 평가가 많다. 레드가 저 춤을 추는 모습을 그린 사람이 있다. 기반 기술이 볼트태클이어서 개체 뽑기가 힘들거라는 우려도 잠식되었는데, 7세대에는 아예 볼트태클을 알려주는 전용 기술 가르치는 NPC의 존재가 확인되었다! 또한 이 사람이 피카츄의 전용 Z크리스탈을 준다. 특이하게도 피카츄 일족의 자체 데이터는 여전히 알 기술로도, 가르침 기술로도 볼트태클이 안 적혀있음에도 불구하고 배울 수 있는 걸로 보아 일종의 자체 "특전기"로 취급하는게 아닐까 싶다.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FF366aKtLeo" frameborder="0" allowfullscreen></iframe>
+  </div>
+</body>
+</html>

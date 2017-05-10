@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>background image</title>
+  <style>
+    /*이미지를 영역 안에서 반복하도록*/
+    .background-image {
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      background-image: url('images/icon.png');
+
+      /*background-repeat : 배경이미지의 반복*/
+        /*no-repeat : 1개의 이미지만 출력됨*/
+        /*repeat : 가로 세로 바둑판형식으로 반복*/
+        /*repeat-x : 가로축으로만 반복*/
+        /*repeat-y : 세로축으로만 반복*/
+      background-repeat: no-repeat;
+
+      /*이미지의 좌표를 정해준다.*/
+      /*%를 쓰면 이미지 사이즈를 기준으로 움직인다.*/
+      background-position: left center;
+      white-space: pre-line;
+
+
+      /*background-attachment: 이미지!를 스크롤할것인가?*/
+        /*background-attachment: local - 이미지가 글과 같이 움직인다.;
+        background-attachment: scroll - 뒤의 위치에 고정;
+        background-attachment: fixed - 웹페이지 전체 기준으로 이미지가 표시됨*/
+      background-attachment: scroll;
+
+      /*overflow: 텍스트를 스크롤할 것인가?
+      가 박스 범위보다 많을 경우 scroll을 만들어준다.*/
+        /*hidden : 아래쪽의 텍스트를 보여주지 않는다.*/
+        /*auto: 텍스트 길이에 맞춰서 스크롤이 생긴다.*/
+      overflow: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="background-image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iusto fuga odit cumque sunt, illum incidunt veritatis voluptatibus, explicabo ducimus, dolore modi atque asperiores. Minus pariatur mollitia fugit maxime voluptatem beatae porro, voluptate similique, nam quaerat cupiditate, corporis dolore voluptates. Nemo voluptatem similique, saepe quos ratione deleniti, quasi neque inventore, cupiditate aut doloremque quis distinctio nobis rerum modi minus sapiente pariatur eius? Asperiores, quae, praesentium.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at sunt beatae placeat voluptates accusamus nostrum laboriosam culpa quisquam minus, dicta consectetur vel eveniet et maiores, perspiciatis, delectus sint id maxime incidunt provident doloremque nesciunt. Nam hic cumque at maxime reprehenderit earum repudiandae, velit odit numquam dolores perferendis laudantium, reiciendis esse sunt illum aliquam quam optio voluptate explicabo, iste nesciunt. Veritatis repellendus mollitia beatae soluta, esse ratione tenetur illo ipsam iure itaque reprehenderit dolorem earum provident sequi inventore culpa laudantium sint doloremque quae? Debitis provident fuga consequatur voluptatem facere. Rerum eveniet similique molestiae deserunt veniam rem facilis optio commodi quas.</p>
+  </div>
+</body>
+</html>

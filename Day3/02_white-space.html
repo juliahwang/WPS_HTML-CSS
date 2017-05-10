@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Text Align</title>
+  <style>
+    /*white-space : 줄바꿈과 공백스타일 지정*/
+    p.nowrap {
+      white-space: nowrap;
+      border : 1px solid black;
+      width: 100px;
+      height: 150px;
+    }
+    p.pre {
+      white-space: pre;
+      border : 1px solid black;
+      width: 100px;
+      height: 150px;
+    }
+    p.pre-line {
+      white-space: pre-line;
+      border : 1px solid black;
+      width: 100px;
+      height: 150px;
+    }
+    p.pre-wrap {
+      white-space: pre-wrap;
+      border : 1px solid black;
+      width: 100px;
+      height: 150px;
+    }
+    div em {
+      color: green;
+      font-size: 20px;
+      width: 100px;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <em>1. white-space: nowrap</em>
+    <em>줄바꿈, 공백 모두 인식하지 않는다 </em>
+    <p class="nowrap">Lorem
+      ip
+
+      su     m dolor sit amet, consectetur adipisicing elit. Molestiae, fugit?</p>
+  </div>
+  <div>
+    <em>2. white-space: pre</em>
+    <em>줄바꿈, 띄어쓰기, 공백 모두 보여줌. 박스를 벗어나도 줄바꿈이 일어나지 않는다.</em>
+    <p class="pre">Lorem
+      ip
+
+      su     m dolor sit amet, consectetur adipisicing elit. Molestiae, fugit?</p>
+  </div>
+  <div>
+    <em>3. white-space:pre-line</em>
+    <em>줄바꿈만, 띄어쓰기는 무시, 박스안에서 줄바꿈이 됨</em>
+    <p class="pre-line">Lorem
+      ip
+
+      su     m dolor sit amet, consectetur adipisicing elit. Molestiae, fugit?</p>
+  </div>
+  <div>
+    <em>4. white-space: pre-wrap</em>
+    <em>줄바꿈, 공백 모두 적용됨, 라인도 바뀜</em>
+    <p class="pre-wrap">Lorem
+      ip
+
+      su     m dolor sit amet, consectetur adipisicing elit. Molestiae, fugit?</p>
+  </div>
+</body>
+</html>
