@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .float-frame {
+      width: 300px;
+      background-color: #eee;
+      border: 1px solid #ddd;
+      padding: 10px;
+      /*(2)또는 부모에 overflow적용- 비추!*/
+      /*overflow: auto;*/
+
+      /*(3)부모도 띄우기 - 다음 선택자에 clear 처리를 해줘야하므로 비추!*/
+      /*float: left;*/
+    }
+
+    /*(4)추천! 가상클래스 선택자를 이용하여 앞 또는 뒤에 속성추가하기
+    실제로는 존재하지 않으나 가상으로 넣어준다*/
+    .float-frame::after {
+      content: " "; /*컨텐츠 속성을 주어야함.*/
+      display: block;
+      height: 0;
+      clear: both;
+
+    }
+    .float-unit {
+      width: 50px;
+      background: #333;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      padding: 15px 0;
+      margin-right: 5px;
+      /*(1)모든 자식이 떠있으므로 부모frame은 자식을 인식하지 못하여 줄어든다.*/
+      float: left;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="float-frame">
+    <div class="float-unit">A</div>
+    <div class="float-unit">B</div>
+    <div class="float-unit">C</div>
+    <div class="float-unit">D</div>
+    <!-- (1)따라서 임의의 속성을 하나 넣어준다. -->
+    <!-- <br style="clear:both"> -->
+  </div>
+  <!--(3) 다음 요소에 clear:both; 스타일을 다시 줘야한다.-->
+  <p style="clear:both">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet facilis illo ratione qui, perspiciatis magnam.</p>
+</body>
+</html>

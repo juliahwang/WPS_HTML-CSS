@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>position-relative</title>
+  <style>
+    div {
+      padding: 10px;
+      border: 1px solid black;
+      color: white;
+      background-color: rgba(50, 50, 50, 0.8);
+    }
+    .relative1 {
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+    .relative2 {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      top: 0px;
+      left: 20px;
+    }
+    .fixed {
+      position: fixed;
+      width: 100px;
+      height: 50px;
+      background-color: blue;
+      right: 10px;
+      bottom: 10px;
+    }
+    .absolute {
+      width: 30px;
+      height: 30px;
+      background-color: lightblue;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="relative1">
+    relative1
+    <div class="relative2">relative2</div>
+    <div class="absolute">absolute</div>
+  </div>
+
+  <div class="fixed">fixed</div>
+</body>
+</html>

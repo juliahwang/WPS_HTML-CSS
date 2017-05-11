@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>guide</title>
+  <style>
+    p {
+      margin: 0;
+    }
+      #wrap {
+      position: relative;
+      width: 100%;
+      border: 1px solid black;
+      height: 100px;
+    }
+    .inner-box {
+      position: absolute;
+      top: 50%;
+      /*transform: translateY(-50%);*/
+      left: 50%;
+      /*transform: translateX(-50%);*/
+      transform: translate(-50%, -50%);
+
+      width: 150px;
+      background-color: green;
+      color: white;
+
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="inner-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, inventore.</div>
+  </div>
+</body>
+</html>

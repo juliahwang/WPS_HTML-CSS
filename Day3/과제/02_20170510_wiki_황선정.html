@@ -22,6 +22,11 @@
       text-align: right;
     }
 
+    .similar-notions * {
+      white-space: pre-wrap;
+      vertical-align: middle;
+      line-height: 1.5rem;
+    }
     .similar-notions img {
       float: left;
       margin-right: 3px;
@@ -31,12 +36,6 @@
       float: right;
       text-align: left;
       padding: 5px;
-    }
-    .similar-notions * {
-      white-space: pre-line;
-      vertical-align: middle;
-      line-height: 1.5rem;
-      overflow: hidden;
     }
 
     div.note {
@@ -55,8 +54,8 @@
     }
 
     table.starting-pokemons tr td {
-      border: 1px solid #ccc;
       padding : 10px;
+      border: 1px solid #ccc;
       text-align: center;
       white-space: nowrap;
       vertical-align: middle;
@@ -179,11 +178,19 @@
     }
 
     .seventh-generation * {
-      vertical-align: middle;
-      white-space: nowrap;
+      vertical-align: text-top;
+    }
+    .seventh-generation h1 {
+      display: inline-block;
+      width: 80%
     }
     .seventh-generation hr {
       border-top: 1px solid #dddddd;
+    }
+    .seventh-generation span {
+      display: inline-block;
+      text-align: right;
+      padding-right: 10px;
     }
 
     .sev-gen-content * {
@@ -341,6 +348,7 @@
       <a href="#">3.7.</a>
       <span>7세대</span>
     </h2>
+    <span><a href="#">[편집]</a></span>
     <hr>
   </div>
   <div class="sev-gen-content">

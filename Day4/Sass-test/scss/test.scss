@@ -1,0 +1,20 @@
+//sass에서만 보이는 주석이다
+//하이
+
+div.container {
+  padding: 15px;
+  margin: 0;
+
+  /*css 주석스타일도 사용할 수 있음*/
+  // div.container > p#main-title을 의미
+  > p#main-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  > .fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+}
